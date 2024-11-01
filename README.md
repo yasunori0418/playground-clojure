@@ -1,14 +1,14 @@
-# hello-iced
+# playground-clojure
 
-A Clojure library designed to ... well, that part is up to you.
+[Vim で始める Clojure 開発](https://tech.toyokumo.co.jp/entry/vim-clojure-development)
 
 ## Usage
 
-FIXME
+チュートリアル的なコードを書いてみたり、サンドボックス的に使う。
 
 ## License
 
-Copyright © 2024 FIXME
+Copyright © 2024 yasunori0418
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

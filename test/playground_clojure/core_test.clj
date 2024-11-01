@@ -1,4 +1,4 @@
-(ns hello-iced.core-test
+(ns playground-clojure.core-test
   (:require [clojure.test :refer :all]
             [hello-iced.core :refer :all]))
 
