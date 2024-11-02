@@ -6,3 +6,6 @@
   (println x "Hello, World!"))
 
 (comment (foo "iced"))
+
+(defn sum [ls]
+  (apply + ls))

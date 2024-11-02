@@ -1,7 +1,8 @@
 (ns playground-clojure.core-test
   (:require [clojure.test :refer :all]
-            [hello-iced.core :refer :all]))
+            [playground-clojure.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest sum-test
+  (is (= 6 (sum [1 2 3])))
+  (is (= 10 (sum [1 2 3 4]))))
+ 
