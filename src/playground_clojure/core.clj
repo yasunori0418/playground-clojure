@@ -1,30 +1,40 @@
 (ns playground-clojure.core)
 
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
+; (defn foo
+;   "I don't do a whole lot."
+;   [x]
+;   (println x "Hello, World!"))
 
-(comment (foo "iced"))
+; (comment (foo "iced"))
 
-(defn sum [ls]
-  (apply + ls))
+; (defn sum [ls]
+;   (apply + ls))
 
-;; https://japan-clojurians.github.io/clojure-site-ja/
-; マルチアリティ関数
-; デフォルト引数みたいな感じか
-(defn messenger
-  ([]     (messenger "Hello multi arity function"))
-  ([msg]  (println msg)))
-(messenger)
+; ;; https://japan-clojurians.github.io/clojure-site-ja/
+; ; マルチアリティ関数
+; ; デフォルト引数みたいな感じか
+; (defn messenger
+;   ([]     (messenger "Hello multi arity function"))
+;   ([msg]  (println msg)))
+; (messenger)
 
-; 可変長引数
-(defn hello [greeting & who]
-  (println greeting who))
-(hello "hello" "world" "class")
+; ; 可変長引数
+; (defn hello [greeting & who]
+;   (println greeting who))
+; (hello "hello" "world" "class")
 
 ; 無名関数
-((fn [msg] (println msg)) "hello!")
+; ((fn [msg] (println msg)) "hello!")
 
 ;; これと等価: (fn [x y] (+ x y))
-(#(+ %1 %2) 1 2)
+; (#(+ %1 %2) 1 2)
+
+; (defn fizzbuzz
+;   [n]
+;   (cond
+;     (= (rem n 15) 0) "FizzBuzz"
+;     (= (rem n 3) 0) "Fizz"
+;     (= (rem n 5) 0) "Buzz"
+;     :else (str n)))
+
+; (#(println (map fizzbuzz (range 1 101))))
