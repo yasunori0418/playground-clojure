@@ -38,3 +38,13 @@
 ;     :else (str n)))
 
 ; (#(println (map fizzbuzz (range 1 101))))
+
+;; map
+
+; (def scores {"Fred" 1400
+;              "Bob" 1240
+;              "Angela" 1024})
+; ;; カンマは空白として使われるらしい
+; ;; いわゆるシンタックスシュガー
+; (def scores {"Fred" 1400, "Bob" 1240, "Angela" 1024})
+
